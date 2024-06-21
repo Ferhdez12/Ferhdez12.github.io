@@ -10,10 +10,13 @@
                    <div class="contenedor">
                       <div class="formulario">
                           <form action="#">
+
                           <h5>Login</h5>
+
                           <div class="input-contenedor">
                                  <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
                           </div>
+
                             <div class="input-contenedor">
                                   <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
                             </div>
@@ -21,11 +24,13 @@
                         <div class="olvidar">
                              <label for="#"
                         <a href="#">olvide la Contraseña</a>
+
                             </label>
                         </div>
                       
               </form>
               <div> 
+                
                 <button>INGRESAR</button>
 
               
@@ -33,7 +38,24 @@
                 <input class="buttons" type="submit" name="" value="volver">
 
               </div>
-
+              <div class="contenedor">
+                <div class="hijo"></div>
+              </div>
+              .contenedor {
+                ...
+                position: relative;
+              }
+              
+              .hijo {
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+                /* centrar vertical y horizontalmente */
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -25px 0 0 -25px; /* aplicar a top y al margen izquierdo un valor negativo para completar el centrado del elemento hijo */
+              }
     </section>
 
   </body>
